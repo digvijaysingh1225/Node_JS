@@ -1,0 +1,19 @@
+{
+  "name": "npmmod",
+  "version": "1.0.0",
+  "description": "NPM Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Node_JS"
+  },
+  "author": "Digvijay Singh",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "validator": "^13.9.0"
+  }
+}
