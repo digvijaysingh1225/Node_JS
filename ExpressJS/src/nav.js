@@ -7,7 +7,8 @@ const express = require("express");
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send("Welcome to Homepage");
+    res.write("<h1>Welcome to Homepage</h1>");
+    res.send(); // For close connection
 });
 
 app.get('/about', (req, res) => {
@@ -19,9 +20,14 @@ app.get('/contact', (req, res) => {
 });
 
 app.get('/temp', (req, res) => {
-    res.status(200).send("Welcome to Temperature Page.");
+    res.send({
+        "id" : 1,
+        "temp" : 40
+    }); // we can use json instead of send
 });
 
+
+// The methods are identical when an object or array is passed, but res.json() will also convert non-objects, such as null and undefined, which are not valid JSON.
 app.listen(3000, () => {
     console.log("Listening to the port.")
 })
