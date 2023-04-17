@@ -1,0 +1,18 @@
+We have to add dynamic data - for this we have to use template engines.
+
+EJS, Pub, Handlebars
+
+hbs -  Express.js view engine for handlebars.js
+npm install hbs
+
+first we have to create a folder named views in which we have to store the html file.
+For the use of template engines page we have to set view engines
+
+for dynamic changes we have to use '{{writename}}' in place where we have to see dynamic changes and write any name in between them.
+And we have to initialize writename in the app.js where you are rendering the page.
+
+Basically, we have to create a views directory for the template engine of name views only.
+But we can change the name of the directory by doing some changes i.e. 
+set a templatePath as the path of the directory with changed name and the set the path by using app.set("view", templatePath);
+
+//Partials to be read
