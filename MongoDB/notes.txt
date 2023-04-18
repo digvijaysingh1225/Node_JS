@@ -1,0 +1,16 @@
+    SQL (MySQl)                         vs      NoSQl (MongoDB)
+(1) RDBMS is a relational database              It's a non-relational, document -oriented database
+    management system and works on              management system and works on document-based
+    relational database                          database.
+
+(2) It stores data in form of entity            MongoDB stores data in form of documents
+    as tables.
+
+(3) It uses SQl to query database               MongoDB uses BSON to query database
+
+* table                                         collection
+* row                                           document
+* column                                        field    
+
+BSOn :- BSON stands for "Binary JSON". BSON's binary structure encodes type and length information, which allows it to be parsed much more quickly.
+:: Check difference between JSON and BSON
